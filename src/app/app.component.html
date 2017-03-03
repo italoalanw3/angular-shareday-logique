@@ -1,0 +1,38 @@
+<h1>
+  {{getTitulo()}}
+</h1>
+
+<h2>Primeiro componente</h2>
+<code>ng g c primeiro-component</code>
+
+<primeiro-componente></primeiro-componente>
+<binding-e-interpolation></binding-e-interpolation>
+
+<div [style.]="">
+<p>Instalando o Bootstrap</p>
+
+<p>
+  <code>
+    npm install --save bootstrap@next    
+  </code>
+  <b>--save</b> para atualizar o package.json do nosso projeto
+</p>
+<p>
+  Atualize o arquivo angular-cli.json <br/>
+  <code>"scripts": [<br/>
+  "../node_modules/jquery/dist/jquery.js",<br/>
+  "../node_modules/tether/dist/js/tether.js",<br/>
+  "../node_modules/bootstrap/dist/js/bootstrap.js"<br/>
+],</code>
+<br/>
+  localize o <b>"styles":[...]</b> e adicione <br/>
+  <code>
+    "../node_modules/bootstrap/dist/css/bootstrap.css",
+  </code>
+</p>
+
+<div class="alert alert-success" role="alert">...</div>
+<div class="alert alert-info" role="alert">...</div>
+<div class="alert alert-warning" role="alert">...</div>
+<div class="alert alert-danger" role="alert">...</div>
+</div>

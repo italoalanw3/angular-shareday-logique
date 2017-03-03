@@ -1,0 +1,17 @@
+
+<div class="alert alert-success" role="alert" [class.alert-warning]="warning">
+  {{binding_e_interpolation}} works!!!
+
+  <i [style.display]="warning ? 'block' : 'none'">Warning foi HABILITADO!!!!</i>
+</div>
+<button type="button" class="btn btn-primary btn-block" (click)="setWarning()">Teste aqui o Properties binding, Events Binding e o Class binding</button>
+
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" [src]="nossaSala">
+  <div class="card-block">
+    <h4 class="card-title">Properties binding</h4>
+    <p class="card-text">
+
+    </p>
+  </div>
+</div>
