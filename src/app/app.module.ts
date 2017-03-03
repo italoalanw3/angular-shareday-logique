@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { PrimeiroComponenteComponent } from './primeiro-componente/primeiro-componente.component';
 import { MinhasDiretivasComponent } from './minhas-diretivas/minhas-diretivas.component';
 import { BindingEInterpolationComponent } from './binding-e-interpolation/binding-e-interpolation.component';
+import { InjecaoDependenciaComponent } from './injecao-dependencia/injecao-dependencia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrimeiroComponenteComponent,
     MinhasDiretivasComponent,
-    BindingEInterpolationComponent
+    BindingEInterpolationComponent,
+    InjecaoDependenciaComponent
   ],
   imports: [
     BrowserModule,
