@@ -8,6 +8,9 @@ import { PrimeiroComponenteComponent } from './primeiro-componente/primeiro-comp
 import { MinhasDiretivasComponent } from './minhas-diretivas/minhas-diretivas.component';
 import { BindingEInterpolationComponent } from './binding-e-interpolation/binding-e-interpolation.component';
 import { InjecaoDependenciaComponent } from './injecao-dependencia/injecao-dependencia.component';
+import { MelhorTimeService } from './injecao-dependencia/melhor-time.service';
+import { PipesComponent } from './pipes/pipes.component';
+import { HttpRequestComponent } from './http-request/http-request.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +18,16 @@ import { InjecaoDependenciaComponent } from './injecao-dependencia/injecao-depen
     PrimeiroComponenteComponent,
     MinhasDiretivasComponent,
     BindingEInterpolationComponent,
-    InjecaoDependenciaComponent
+    InjecaoDependenciaComponent,
+    PipesComponent,
+    HttpRequestComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [MelhorTimeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

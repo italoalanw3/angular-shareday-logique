@@ -1,29 +1,17 @@
 import { Injectable, Inject } from '@angular/core';
 
+import { MelhorTimeService } from './melhor-time.service';
+
 @Injectable()
 export class FutebolService {
 
-  private melhorTime: MelhorTime;
+  private melhorTime:string;
 
-  constructor() {
-    this.melhorTime = new MelhorTime();
+  constructor(private melhorTimeService: MelhorTimeService) {
+    this.melhorTime = melhorTimeService.getNome();
    }
 
    getMelhorTime():string{
-     return this.melhorTime.getNome();
+     return this.melhorTime;
    }
-}
-
-/**
- * Melhor time
- */
-class MelhorTime {
-  private nome:string='FC Barcelona';
-
-  constructor(){
-  }
-
-  getNome(){
-    return this.nome;
-  }
 }

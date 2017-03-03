@@ -6,12 +6,23 @@
 </div>
 gi<button type="button" class="btn btn-primary btn-block" (click)="setWarning()">Teste aqui o Properties binding, Events Binding e o Class binding</button>
 
-<div class="card" style="width: 20rem;">
+<div class="row">
+<div class="card col-md-3" style="width: 20rem;">
   <img class="card-img-top" [src]="nossaSala">
   <div class="card-block">
-    <h4 class="card-title">Properties binding</h4>
+    <h4 class="card-title">Properties binding <code>[src]="..."</code></h4>
     <p class="card-text">
 
     </p>
   </div>
+</div>
+<div class="card col-md-3" style="width: 20rem;">
+  <img class="card-img-top" bind-src="nossaSala">
+  <div class="card-block">
+    <h4 class="card-title">Properties binding com <code>bind-src</code></h4>
+    <p class="card-text">
+
+    </p>
+  </div>
+</div>
 </div>
