@@ -11,6 +11,7 @@ import { InjecaoDependenciaComponent } from './injecao-dependencia/injecao-depen
 import { MelhorTimeService } from './injecao-dependencia/melhor-time.service';
 import { PipesComponent } from './pipes/pipes.component';
 import { HttpRequestComponent } from './http-request/http-request.component';
+import { HelloComponent } from './hello/hello.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpRequestComponent } from './http-request/http-request.component';
     BindingEInterpolationComponent,
     InjecaoDependenciaComponent,
     PipesComponent,
-    HttpRequestComponent
+    HttpRequestComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,

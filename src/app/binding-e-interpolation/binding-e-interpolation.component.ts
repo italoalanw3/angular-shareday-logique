@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class BindingEInterpolationComponent implements OnInit {
 
   binding_e_interpolation: string = 'binding-e-interpolation';
-  warning: boolean = false;
+  warning: any = false;
   nossaSala: string = 'assets/sala_de_desenvolvimento.jpg';
 
   constructor() { }
@@ -17,6 +17,7 @@ export class BindingEInterpolationComponent implements OnInit {
   }
 
   setWarning(){
+    this.warning = '';
     this.warning = !this.warning;
   }
 

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MinhasDiretivasComponent implements OnInit {
 
-  isExibir: boolean = true;
+  isExibir: boolean = false;
   aplica: string;
 
   aplicacoes: Aplicacao[] = [];
@@ -17,6 +17,11 @@ export class MinhasDiretivasComponent implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+  ocultar(){
+    this.isExibir = !this.isExibir;
+    this.aplicacoes.push({id: 1, nome: 'SGM'});
   }
 
   carregarAplicacoes(){
